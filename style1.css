@@ -23,35 +23,33 @@ body
     
 }
 #body
-{
-    padding: 10px;
-    
+{ 
+    margin: auto;
+    display: grid;
+    padding: 10px;    
     border-radius: 15px; 
     height: auto;
-    width: 265px;
+    width:min-content;
     background-color: rgb(53, 53, 53);
+    grid-template-rows: 85px 20px 50px 50px 50px 50px;
+    grid-template-columns: 50px 50px 50px 50px 50px;
 }
 button
 {
     color: rgb(219, 219, 219);
     background-color: rgb(97, 97, 97);
     border-radius: 10px;           
-    margin: 0px;
-    height: 50px;
-    width: 50px; 
+    margin: 0px;    
     font-size: medium;   
 }
 button:hover
 {
     background-color: rgb(124, 124, 124);
 }
-#keypad
-{    
-    height: auto;
-    text-align: center;    
-}
 #screen
 {
+    grid-row: 1;
+    grid-column: 1 / 6;
     font-family: 'Seven-Segment';
     overflow-x:auto;
     padding: 2px;
@@ -59,15 +57,94 @@ button:hover
     font-style: bold;
     border-style: inset;
     border-color: rgb(77, 77, 77);
+    border-width: 6px;
     background-color: rgb(97, 128, 88);
-    color: rgb(0, 0, 0);    
-    height:70px;    
+    color: rgb(0, 0, 0);           
     text-align: right; 
     border-radius: 5px;
 }
+#Seven{
+    grid-row: 3;
+    grid-column: 1;
+}
+#Eight{
+    grid-row:3;
+    grid-column: 2;
+}
+#Nine{
+    grid-row:3;
+    grid-column: 3;
+}
+#Divide{
+    grid-row:3;
+    grid-column: 4;
+}
+#C{
+    grid-row:3;
+    grid-column: 5;
+}
+#Four{
+    grid-row:4;
+    grid-column: 1;
+}
+#Five{
+    grid-row:4;
+    grid-column: 2;
+}
+#Six{
+    grid-row:4;
+    grid-column: 3;
+}
+#X{
+    grid-row:4;
+    grid-column: 4;
+}
 #Del{
+    grid-row:4;
+    grid-column: 5;
     background-color: rgb(226, 39, 39);
+    border-style:outset;
+    border-color: rgb(110, 21, 21);
+}
+#Del:active{
+    border-style: inset;
 }
 #Del:hover{
     background-color:rgb(223, 101, 101) ;
+}
+#One{
+    grid-row:5;
+    grid-column: 1;
+}
+#Two{
+    grid-row:5;
+    grid-column: 2;
+}
+#Three{
+    grid-row:5;
+    grid-column: 3;
+}
+#Minus{
+    grid-row:5;
+    grid-column: 4;
+}
+#Zero{
+    grid-row:6;
+    grid-column: 1;
+}
+#Negative{
+    grid-row:6;
+    grid-column: 2;
+}
+#Point{
+    grid-row:6;
+    grid-column: 3;
+}  
+#Plus{
+    grid-row:6;
+    grid-column: 4;
+}   
+#Equals{
+    grid-row:5 / 7;
+    grid-column: 5; 
 }

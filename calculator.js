@@ -4,7 +4,7 @@ let opperatorTally=[];
 let numberTally=[];
 document.getElementById("screen").innerText = "0";
 
-document.getElementById("1").onclick = function()
+document.getElementById("One").onclick = function()
 {
     
     if(tally=="0"){
@@ -14,7 +14,7 @@ document.getElementById("1").onclick = function()
     }    
     document.getElementById("screen").innerText = tally;    
 }
-document.getElementById("2").onclick = function()
+document.getElementById("Two").onclick = function()
 {
     
         if(tally=="0"){
@@ -25,7 +25,7 @@ document.getElementById("2").onclick = function()
         document.getElementById("screen").innerText = tally;
         
 }
-document.getElementById("3").onclick = function()
+document.getElementById("Three").onclick = function()
 {
     if(tally=="0"){
         tally="3"
@@ -34,7 +34,7 @@ document.getElementById("3").onclick = function()
     }    
     document.getElementById("screen").innerText = tally;
 }
-document.getElementById("4").onclick = function()
+document.getElementById("Four").onclick = function()
 {
     if(tally=="0"){
         tally="4"
@@ -43,7 +43,7 @@ document.getElementById("4").onclick = function()
     }    
     document.getElementById("screen").innerText = tally;
 }
-document.getElementById("5").onclick = function()
+document.getElementById("Five").onclick = function()
 {
     if(tally=="0"){
         tally="5"
@@ -52,7 +52,7 @@ document.getElementById("5").onclick = function()
     }    
     document.getElementById("screen").innerText = tally;
 }
-document.getElementById("6").onclick = function()
+document.getElementById("Six").onclick = function()
 {
     if(tally=="0"){
         tally="6"
@@ -61,7 +61,7 @@ document.getElementById("6").onclick = function()
     }    
     document.getElementById("screen").innerText = tally;
 }
-document.getElementById("7").onclick = function()
+document.getElementById("Seven").onclick = function()
 {
     if(tally=="0"){
         tally="7"
@@ -70,7 +70,7 @@ document.getElementById("7").onclick = function()
     }    
     document.getElementById("screen").innerText = tally;
 }
-document.getElementById("8").onclick = function()
+document.getElementById("Eight").onclick = function()
 {
     if(tally=="0"){
         tally="8"
@@ -79,7 +79,7 @@ document.getElementById("8").onclick = function()
     }    
     document.getElementById("screen").innerText = tally;
 }
-document.getElementById("9").onclick = function()
+document.getElementById("Nine").onclick = function()
 {
     if(tally=="0"){
         tally="9"
@@ -88,14 +88,14 @@ document.getElementById("9").onclick = function()
     }    
     document.getElementById("screen").innerText = tally;
 }
-document.getElementById("0").onclick = function()
+document.getElementById("Zero").onclick = function()
 {
     if(tally!="0"&&tally!=""){
         tally = tally + "0" 
         document.getElementById("screen").innerText = tally;
     }    
 }
-document.getElementById(".").onclick = function()
+document.getElementById("Point").onclick = function()
 {    
     if(tally==""){
         tally = tally + "0"+ ".";
@@ -119,7 +119,7 @@ document.getElementById("Del").onclick = function()
     }    
     document.getElementById("screen").innerText = tally;
 }
-document.getElementById("+/-").onclick = function()
+document.getElementById("Negative").onclick = function()
 {
 
     if(tally=="0"){
@@ -131,7 +131,7 @@ document.getElementById("+/-").onclick = function()
         document.getElementById("screen").innerText = tally;  
     }    
 }
-document.getElementById("/").onclick = function()
+document.getElementById("Divide").onclick = function()
 {
     if(tally!="0"&&tally!=""&&!tally.endsWith("+")&&!tally.endsWith("-")&&!tally.endsWith("*")&&!tally.endsWith("/")&&!tally.endsWith(".")){
         opperatorTally.push("/")
@@ -147,7 +147,7 @@ document.getElementById("X").onclick = function()
         document.getElementById("screen").innerText = tally;
     }    
 }
-document.getElementById("-").onclick = function()
+document.getElementById("Minus").onclick = function()
 {
     if(tally!="0"&&tally!=""&&!tally.endsWith("+")&&!tally.endsWith("-")&&!tally.endsWith("*")&&!tally.endsWith("/")&&!tally.endsWith(".")){
         opperatorTally.push("-")
@@ -155,7 +155,7 @@ document.getElementById("-").onclick = function()
     document.getElementById("screen").innerText = tally;
     }    
 }
-document.getElementById("+").onclick = function()
+document.getElementById("Plus").onclick = function()
 {
     if(tally!="0"&&tally!=""&&!tally.endsWith("+")&&!tally.endsWith("-")&&!tally.endsWith("*")&&!tally.endsWith("/")&&!tally.endsWith(".")){
         opperatorTally.push("+")
@@ -168,7 +168,7 @@ document.getElementById("C").onclick = function()
     tally = "0";  
     document.getElementById("screen").innerText = tally;  
 }
-document.getElementById("=").onclick = function()
+document.getElementById("Equals").onclick = function()
 {   
     if(tally.endsWith("+")||tally.endsWith("-")||tally.endsWith("*")||tally.endsWith("/")||tally.endsWith(".")){
         tally = tally.slice(0,(tally.length-1))
