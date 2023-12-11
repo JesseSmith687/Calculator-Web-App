@@ -28,7 +28,7 @@ body
     margin: auto;
     border-radius: 15px; 
     height: auto;
-    width:fit-content;
+    width: 265px;
     background-color: rgb(53, 53, 53);
 }
 button
@@ -54,7 +54,7 @@ button:hover
 #screen
 {
     font-family: 'Seven-Segment';
-    overflow-y: auto;
+    overflow-x:auto;
     padding: 2px;
     font-size:50px;
     font-style: bold;
