@@ -42,14 +42,15 @@ body
 button
 {
     color: rgb(219, 219, 219);
-    background-color: rgb(97, 97, 97);
+    background-color: rgb(70, 70, 70);
+    border-color: rgb(0, 0, 0);
     border-radius: 10px;           
-    margin: 0px;    
+    margin: 1px;    
     font-size: medium;   
 }
 button:hover
 {
-    background-color: rgb(124, 124, 124);
+    background-color: rgb(100, 100, 100);
 }
 #screen
 {
@@ -87,6 +88,15 @@ button:hover
 #C{
     grid-row:3;
     grid-column: 5;
+    background-color: rgb(141, 24, 24);
+    border-style:outset;
+    border-color: rgb(68, 22, 22);
+}
+#C:active{
+    border-style: inset;
+}
+#C:hover{
+    background-color:rgb(187, 68, 68) ;
 }
 #Four{
     grid-row:4;
@@ -107,15 +117,15 @@ button:hover
 #Del{
     grid-row:4;
     grid-column: 5;
-    background-color: rgb(173, 27, 27);
+    background-color: rgb(141, 24, 24);
     border-style:outset;
-    border-color: rgb(53, 12, 12);
+    border-color: rgb(68, 22, 22);
 }
 #Del:active{
     border-style: inset;
 }
 #Del:hover{
-    background-color:rgb(223, 101, 101) ;
+    background-color:rgb(187, 68, 68) ;
 }
 #One{
     grid-row:5;
@@ -151,5 +161,14 @@ button:hover
 }   
 #Equals{
     grid-row:5 / 7;
-    grid-column: 5; 
+    grid-column: 5;
+    background-color: rgb(33, 68, 133);
+    border-style:outset;
+    border-color: rgb(27, 45, 77);
+} 
+#Equals:active{
+    border-style: inset;
+}
+#Equals:hover{
+    background-color:rgb(65, 106, 182) ;
 }
